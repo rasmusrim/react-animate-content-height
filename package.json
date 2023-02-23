@@ -1,0 +1,43 @@
+{
+  "name": "react-animate-content-height",
+  "version": "1.0.11",
+  "description": "A React library to animate height without knowing the height of the contents",
+  "main": "dist/AnimateHeight.ts",
+  "types": "dist/AnimateHeight.d.ts",
+  "files": ["dist/**", "README.md"],
+  "directories": {
+    "example": "example"
+  },
+  "exports": {
+    ".": "./dist/AnimateHeight.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rasmusrim/react-animate-content-height.git"
+  },
+  "keywords": [
+    "react",
+    "height",
+    "animate"
+  ],
+  "author": "Rasmus Rimestad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rasmusrim/react-animate-content-height/issues"
+  },
+  "homepage": "https://github.com/rasmusrim/react-animate-content-height#readme",
+  "peerDependencies": {
+    "react": "16 || 17 || 18"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.28",
+    "prettier": "^2.8.4",
+    "react": "^18.2.0"
+  },
+  "dependencies": {
+    "typescript": "^4.9.5"
+  }
+}

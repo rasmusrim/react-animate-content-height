@@ -7,14 +7,14 @@ import React, {
 } from "react";
 
 interface Props extends PropsWithChildren {
-  animationDuration: number;
+  animationDuration?: number;
 }
 
 export function AnimateHeight({ children, animationDuration = 0.5 }: Props) {
   const shadowRef = useRef<HTMLDivElement>(null);
   const actualRef = useRef<HTMLDivElement>(null);
-  const [actualInnerHTML, setActualInnerHTML] = useState<ReactNode>(<></>);
-  const shadowInnerHTML = useRef<ReactNode>(<></>);
+  const [actualInnerHTML, setActualInnerHTML] = useState<ReactNode>(children);
+  const shadowInnerHTML = useRef<ReactNode>(children);
 
   const [height, setHeight] = useState(0);
   const [width, setWidth] = useState(0);
