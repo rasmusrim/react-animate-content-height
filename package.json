@@ -1,6 +1,6 @@
 {
   "name": "react-animate-content-height",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "A React library to animate height without knowing the height of the contents",
   "main": "dist/AnimateHeight.ts",
   "types": "dist/AnimateHeight.d.ts",
