@@ -26,7 +26,7 @@ export function AnimateHeight({ children, animationDuration = 0.5 }: Props) {
       return;
     }
 
-    shadowRef.current.addEventListener("DOMSubtreeModified", () => {
+    const mutationObserver = new MutationObserver(() => {
       if (!shadowRef.current || !actualRef.current) {
         return;
       }
@@ -38,6 +38,13 @@ export function AnimateHeight({ children, animationDuration = 0.5 }: Props) {
           setActualInnerHTML(shadowInnerHTML.current);
         }, animationDuration * 1000);
       }
+    });
+
+    mutationObserver.observe(shadowRef.current, {
+      attributes: true,
+      attributeFilter: ["style"],
+      childList: true,
+      subtree: true,
     });
   }, []);
 
