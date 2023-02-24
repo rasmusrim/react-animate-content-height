@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./App.css";
 import { faker } from "@faker-js/faker";
 import { AnimateHeight } from "react-animate-content-height";
 

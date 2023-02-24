@@ -84,7 +84,14 @@ export function AnimateHeight({ children, animationDuration = 0.5 }: Props) {
       <div
         ref={shadowRef}
         data-react-animate-height-type="shadow"
-        style={{ opacity: 0, top: 0, left: 0, position: "absolute", width }}
+        style={{
+          opacity: 0,
+          top: 0,
+          left: 0,
+          position: "absolute",
+          width,
+          zIndex: 1,
+        }}
       >
         {shadowInnerHTML.current}
       </div>
@@ -95,6 +102,7 @@ export function AnimateHeight({ children, animationDuration = 0.5 }: Props) {
           height,
           transition: `height ${animationDuration}s`,
           overflow: "hidden",
+          zIndex: 2,
         }}
         data-react-animate-height-type="actual"
       >
