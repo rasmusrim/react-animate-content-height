@@ -90,7 +90,7 @@ export function AnimateHeight({ children, animationDuration = 0.5 }: Props) {
           left: 0,
           position: "absolute",
           width,
-          zIndex: 1,
+          pointerEvents: "none",
         }}
       >
         {shadowInnerHTML.current}
@@ -102,7 +102,6 @@ export function AnimateHeight({ children, animationDuration = 0.5 }: Props) {
           height,
           transition: `height ${animationDuration}s`,
           overflow: "hidden",
-          zIndex: 2,
         }}
         data-react-animate-height-type="actual"
       >
