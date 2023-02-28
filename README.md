@@ -1,5 +1,5 @@
 # react-animate-content-height
-A component which will enable animating the height of a component based on the actual content. That means you don't have to know anything about the height.
+A component which will enable animating the height of a component based on the actual content.
 
 That means you don't have to calculate the height or anything in order to animate it. This library will do those calculations for you.
 
@@ -12,7 +12,8 @@ import { AnimateHeight } from "react-animate-content-height";
 </AnimateHeight>
 ```
 
-For a more comprehensive example, check out the example in the `example` folder in the repo.
+For a more comprehensive example, check out the example in the `example` folder in the repo, 
+or [this Sandbox](https://codesandbox.io/s/react-animate-content-height-example-45obqr).
 
 
 
