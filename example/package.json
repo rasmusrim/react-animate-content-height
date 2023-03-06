@@ -1,7 +1,6 @@
 {
   "name": "example",
   "version": "0.1.0",
-  "private": true,
   "dependencies": {
     "@faker-js/faker": "^7.6.0",
     "@testing-library/jest-dom": "^5.16.5",

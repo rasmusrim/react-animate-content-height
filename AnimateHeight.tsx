@@ -32,10 +32,10 @@ export function AnimateHeight({ children, animationDuration = 0.5 }: Props) {
       }
 
       if (shadowRef.current.offsetHeight >= actualRef.current.offsetHeight) {
-        setActualInnerHTML(children);
+        setActualInnerHTML(shadowInnerHTML.current);
       } else {
         setTimeout(() => {
-          setActualInnerHTML(children);
+          setActualInnerHTML(shadowInnerHTML.current);
         }, animationDuration * 1000);
       }
     });

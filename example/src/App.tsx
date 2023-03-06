@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { faker } from "@faker-js/faker";
-import { AnimateHeight } from "react-animate-content-height";
+import { AnimateHeight } from "../../AnimateHeight";
 
 function App() {
   const [text, setText] = useState(generateText());
